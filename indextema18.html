@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <label for="nume">Nume Utilizator: </label>
+    <input type="text" id="nume"><br>
+
+    <label for="suma">Suma: </label>
+    <input type="number" id="suma"><br><br><br>
+<!-- 
+    <label for="nume">Nume Cont: </label>
+    <input type="text" id="nume"><br>
+
+    <label for="nume">Nume Client: </label>
+    <input type="text" id="nume"><br>
+
+    <label for="suma">Suma: </label>
+    <input type="number" id="nume"><br><br><br> -->
+
+    <button onclick="genereazaUtilizator()">Genereaza Utilizator</button>
+
+    <script>
+
+
+
+        class Cont {
+            constructor(numeCont, numeClient, suma) {
+                this.numeCont = numeCont;
+                this.numeClient = numeClient;
+                this.suma = suma;
+            }
+            sendMoneyTo(Utilizatori, suma) {
+
+            }
+        }
+        class Utilizatori {
+            constructor(numeUtilizator, suma) {
+                this.numeUtilizator = numeUtilizator;
+                this.suma = suma;
+            }
+        }
+
+        var utilizatori = [];
+
+        function genereazaUtilizator() {
+            var nume = document.getElementById("nume").value;
+            var suma = document.getElementById("suma").valueAsNumber;
+
+            var utilizator = new Utilizatori(nume, suma);
+            utilizatori.push(utilizator);
+
+            console.log('Am creat o instanta a clasei utilizator cu numere :' + utilizator.numeUtilizator);
+
+        }
+
+
+    </script>
+</body>
+
+</html>

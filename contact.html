@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Luxury car rent</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div>
+        <nav id="fixtop" class="navbar fixed-top navbar-dark">
+            <a id="textc" class="navbar-brand text-dark">
+                <i class="bi bi-telephone ml-5"></i> +971266655553 </a>
+            <a>
+                <i class="bi bi-clock ml-5"></i> Opening time MONDAY - SATURDAY 08:00 TO 21:00 </a>
+
+        </nav>
+    </div>
+
+
+
+
+    <div class="containerr">
+        <nav class="navbarr navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-img"> <img
+                                src="C:\Users\Alin\Desktop\Atelierele IlBaH\Proiect final\materiale\logopremium.png"
+                                style="height: 110px; width: 110px; border-radius: 50% ;"> <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/proiect.html">Home</a>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/rentcar.html?">
+                            Rent</a>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/aboutus.html">
+                            About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/contact.html">
+                            Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <br><br><br>
+
+
+
+
+
+
+
+
+    <div class="mapouter">
+        <h1>Location Map</h1>
+
+        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=DAMAC Avanti, Damac Residential Business Center - 34a Marasi Dr - Business Bay - Dubai - United Arab Emirates&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                style="height:500px; "></iframe></div>
+
+    </div>
+    </div>
+
+    <div class="text">
+        <h1>Use our quick booking form to get the car you desire </h1>
+    </div>
+
+    <div class="contactForm">
+        <form onsubmit="return false">
+            <hr>
+            <input type="radio" size="25" name="tip" value="domn" required checked>Mr.
+            <input type="radio" size="25" name="tip" value="domn" required>Ms.<br><br>
+
+            <label for="firstName">First name </label>
+            <input type="text" id="nameF"><br><br>
+
+            <label for="secondName">Second name </label>
+            <input type="text" id="nameS"><br><br>
+
+            <label for="myPhone">Phone Number</label>
+            <input type="tel" id="myPhone"><br><br>
+
+            <label for="emailAdress">Email adress </label>
+            <input type="email" id="email"><br><br>
+
+            <label for="locationPickup">Location pickup</label>
+            <input type="text" id="location"><br><br>
+
+            <label for="cars">Car model</label>
+
+            <select id="cars" name="carlist" form="carform">
+                <option>Select</option>
+                <option>Audi R8</option>
+                <option> Audi RS-Q8</option>
+                <option>Nissan Patrol</option>
+                <option>Nissan GT-R</option>
+                <option>Mercedes-S500</option>
+                <option> Mercedes-AMG GLE 63 S</option>
+                <option>Mercedes-AMG G 63 S </option>
+                <option> Lamborghini Urus</option>
+                <option> Lamborghini Huracan</option>
+                <option> Ferrari Spider</option>
+                <option> Chevrolet Tahoe</option>
+                <option> Corvette Stingray</option>
+            </select><br><br>
+
+
+            <label for="date">Order date:</label>
+            <input type="date" id="date" name="date" size="25" required><br><br>
+
+            <label for="appt">Order time:</label>
+            <input type="time" id="appt" name="appt" required> <br><br>
+            <label for="lblMesaj">Message</label>
+            <textarea id="inMesaj" size="25" maxlength="50"></textarea><br><br>
+
+            <input type="checkbox" name="checkbox" id="check" />I have read and I accept <span> <a
+                    href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/aboutus.html"
+                    target="_blank">Privacy Policy and Terms&Conditions</a> </span><br><br>
+            <button onclick="validateDetail()" style="border-radius: 5px;">Submit</button><br><br>
+            <hr>
+        </form>
+    </div>
+
+
+    <div class="contactPic"> <img src="C:\Users\Alin\Desktop\Atelierele IlBaH\Proiect final\materiale\contactUs.png"
+            width="650px" height="650px"></div>
+
+
+
+    <div class="reviews">
+        <h1>Take time and let us an Review</h1>
+    </div>
+
+
+    <div class="reviews2">
+        <div class="googlestars">
+            <img src="C:\Users\Alin\Desktop\Atelierele IlBaH\Proiect final\materiale\rentcar\google-icon.png"
+                width="200px" height="130px"><br><br>
+            <div class="text1">
+                <p>5 Stars average rating based on 374 reviews</p>
+            </div>
+            <div>
+                <a
+                    href="https://www.google.com/maps/d/viewer?mid=17YDSe856chHYLJDraCTPpmN5img&hl=en&ll=19.31096691292639%2C-16.337016000000006&z=2">Leave
+                    a Google Review</a>
+            </div>
+        </div>
+        <div class="tripstars"> <img
+                src="C:\Users\Alin\Desktop\Atelierele IlBaH\Proiect final\materiale\rentcar\tripadvisor-logo.png"
+                width="200px" height="150px"><br><br>
+            <div class="text2">
+                <p>5 Stars average rating based on 5 reviews</p>
+            </div>
+            <div>
+                <a href="https://www.tripadvisor.com/UserReview">Leave a TripAdvisor Review</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="info">
+        <div class="terms">
+            <h4>Read <i class="bi bi-arrow-bar-right"></i><a
+                    href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/aboutus.html"> Terms and
+                    Conditions</a></h4>
+            <h4>Read <i class="bi bi-arrow-bar-right"></i><a
+                    href="file:///C:/Users/Alin/Desktop/Atelierele%20IlBaH/Proiect%20final/aboutus.html"> Privacy
+                    Policy</a></h4>
+        </div><br>
+        <img src="C:\Users\Alin\Desktop\Atelierele IlBaH\Proiect final\materiale\rentcar\pay.webp" width="600px "
+            height="120px">
+        <h6>LuxuryCarRent.com © 2002 - 2022 All rights reserved</h6>
+    </div>
+
+
+    <nav id="fixbtnd" class="navbar fixed-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand text-dark">Follow us on</a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+
+
+        </div>
+    </nav>
+
+
+
+    <script>
+
+        var detail = [];
+
+        function validateDetail() {
+            var firstName = document.getElementById("nameF").value;
+            if (firstName == "") {
+                alert("First Name must be filled out");
+                return false;
+            }
+
+
+
+
+            var secondName = document.getElementById("nameS").value;
+            if (secondName.length == "") {
+                alert("Second Name must be filled out");
+                return false;
+            }
+
+
+
+            var input = document.getElementById("myPhone").value;
+            var format = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
+            if (input === '') {
+                alert("Please Enter Phone Number")
+            }
+            else if (input.match(format)) { }
+            else {
+                alert("Type using correct format");
+            }
+
+
+
+
+            var emailAdress = document.getElementById("email").value;
+
+            if (!emailAdress.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+                alert("You have entered an invalid email adress")
+                return false;
+            }
+
+
+            var locationPickup = document.getElementById("location").value;
+            if (locationPickup == "") {
+                alert("Location Pickup must be filled out");
+                return false;
+            }
+
+
+            var cars = document.getElementById("cars").value;
+            if (cars == "Select") {
+                alert("Please select a car!")
+                return false;
+            }
+
+
+
+
+            var checkbox = document.getElementById("check");
+            if (checkbox.checked != true) {
+                alert("You must read and agree to the terms first !")
+            }
+
+            var appt = document.getElementById("appt").value;
+            if (appt == "") {
+                alert("a time must be filled out");
+                return false;
+            }
+
+            var date = document.getElementById("date").value;
+            if (date == "") {
+                alert("a date must be filled out");
+                return false;
+            }
+
+            
+            
+            
+            
+            detail.push(firstName, secondName, locationPickup, emailAdress,
+            input, cars, appt, date);
+            
+            
+            console.log("You submit!")
+            alert("Congrat you submit,soon you will be contact!")
+            
+            return (true);
+        }
+        
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>

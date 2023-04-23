@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax</title>
+</head>
+
+<body>
+    <button id="data" onclick="getData()">Get Data</button>
+    <h3>Some data</h3>
+    <div id="articles"></div>
+
+
+    <script>
+        function getData() {
+            fetch("https://thejsway-serverherokuapp.com/api/articles")
+                .then((response) => response.json())
+                .then((articles) => {
+                    articles.forEach(element => {
+                        const titleElement = document.createElement("h3");
+                        titleElement.textContent = element.title;
+
+                        const contentElement = document.createElement("p");
+                        contentElement.textContent = element.content;
+
+                        const articlesElement = document.getElementById("articles");
+
+                        articlesElement.appendChild(titleElement);
+                        articlesElement.appendChild(contentElement);
+
+
+                    });
+                })
+                .catch((err) => { console.error(err.mesage) });
+        }
+
+    </script>
+
+</body>
+
+</html>
